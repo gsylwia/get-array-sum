@@ -3,6 +3,10 @@ const startingNumber = 5;
 
 const getArraySum = (numbersArray, initialValue) => {
 
+    if (Array.isArray(numbersArray) && typeof(initialValue) !== "number") {
+        return [];
+    }
+    
     let sum = initialValue;
 
     if (numbersArray.length == 0) {
