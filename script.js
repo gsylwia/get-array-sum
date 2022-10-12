@@ -6,7 +6,7 @@ const getArraySum = (numbersArray, initialValue) => {
     if (Array.isArray(numbersArray) && typeof(initialValue) !== "number") {
         return [];
     }
-    
+
     let sum = initialValue;
 
     if (numbersArray.length == 0) {
@@ -14,7 +14,7 @@ const getArraySum = (numbersArray, initialValue) => {
         return sum;
     }
         
-    let del = numbersArray.shift();
+    const del = numbersArray.shift();
     sum += del;
     return getArraySum(exampleArray, sum)
 };
